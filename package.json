@@ -1,5 +1,5 @@
 {
-	"name": "utilsyy",
+	"name": "dutilyy",
 	"version": "1.1.1",
 	"description": "A package for JS functions that should be in the main language but aren't.",
 	"scripts": {},
@@ -44,6 +44,7 @@
 		"publishyy": "^0.0.1",
 		"tsup": "^8.3.5",
 		"typedoc": "^0.26.10",
+		"typedoc-github-theme": "^0.1.2",
 		"typescript": "^5.6.3"
 	}
 }

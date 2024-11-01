@@ -1,0 +1,1753 @@
+{
+	"id": 0,
+	"name": "Publishyy",
+	"variant": "project",
+	"kind": 1,
+	"flags": {},
+	"children": [
+		{
+			"id": 1,
+			"name": "Catch",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 6,
+					"name": "catchError",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "Catch.ts",
+							"line": 54,
+							"character": 22,
+							"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Catch.ts#L54"
+						}
+					],
+					"signatures": [
+						{
+							"id": 7,
+							"name": "catchError",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "This function catches and handles errors from an asynchronous promise."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "- A promise that resolves to either:\n- An array containing "
+											},
+											{
+												"kind": "code",
+												"text": "`undefined`"
+											},
+											{
+												"kind": "text",
+												"text": " and the resolved value of the promise, if no error occurred.\n- An array containing an "
+											},
+											{
+												"kind": "code",
+												"text": "`Error`"
+											},
+											{
+												"kind": "text",
+												"text": " object and "
+											},
+											{
+												"kind": "code",
+												"text": "`null`"
+											},
+											{
+												"kind": "text",
+												"text": ", if an error occurred during the promise execution."
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```typescript\nconst promise = fetch('https://api.example.com/data');\ncatchError(promise)\n  .then(([error, data]) => {\n    if (error) {\n      console.error('An error occurred:', error);\n    } else {\n      console.log('Data received:', data);\n    }\n  });\n```"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "Catch.ts",
+									"line": 54,
+									"character": 22,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Catch.ts#L54"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 8,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The type of the promise's resolved value."
+											}
+										]
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 9,
+									"name": "promise",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The promise to catch errors from."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": {
+											"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+											"qualifiedName": "Promise"
+										},
+										"typeArguments": [
+											{
+												"type": "reference",
+												"target": 8,
+												"name": "T",
+												"package": "dutilyy",
+												"refersToTypeParameter": true
+											}
+										],
+										"name": "Promise",
+										"package": "typescript"
+									}
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": {
+									"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+									"qualifiedName": "Promise"
+								},
+								"typeArguments": [
+									{
+										"type": "union",
+										"types": [
+											{
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "intrinsic",
+														"name": "undefined"
+													},
+													{
+														"type": "reference",
+														"target": 8,
+														"name": "T",
+														"package": "dutilyy",
+														"refersToTypeParameter": true
+													}
+												]
+											},
+											{
+												"type": "tuple",
+												"elements": [
+													{
+														"type": "reference",
+														"target": {
+															"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+															"qualifiedName": "Error"
+														},
+														"name": "Error",
+														"package": "typescript"
+													},
+													{
+														"type": "literal",
+														"value": null
+													}
+												]
+											}
+										]
+									}
+								],
+								"name": "Promise",
+								"package": "typescript"
+							}
+						}
+					]
+				},
+				{
+					"id": 2,
+					"name": "catchErrorSync",
+					"variant": "declaration",
+					"kind": 64,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "Catch.ts",
+							"line": 22,
+							"character": 16,
+							"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Catch.ts#L22"
+						}
+					],
+					"signatures": [
+						{
+							"id": 3,
+							"name": "catchErrorSync",
+							"variant": "signature",
+							"kind": 4096,
+							"flags": {},
+							"comment": {
+								"summary": [
+									{
+										"kind": "text",
+										"text": "This function catches and handles errors from a synchronous operation."
+									}
+								],
+								"blockTags": [
+									{
+										"tag": "@returns",
+										"content": [
+											{
+												"kind": "text",
+												"text": "- An array containing either:\n- "
+											},
+											{
+												"kind": "code",
+												"text": "`undefined`"
+											},
+											{
+												"kind": "text",
+												"text": " and the original value "
+											},
+											{
+												"kind": "code",
+												"text": "`t`"
+											},
+											{
+												"kind": "text",
+												"text": ", if no error occurred.\n- An "
+											},
+											{
+												"kind": "code",
+												"text": "`Error`"
+											},
+											{
+												"kind": "text",
+												"text": " object and "
+											},
+											{
+												"kind": "code",
+												"text": "`null`"
+											},
+											{
+												"kind": "text",
+												"text": ", if an error occurred during the operation."
+											}
+										]
+									},
+									{
+										"tag": "@example",
+										"content": [
+											{
+												"kind": "code",
+												"text": "```typescript\nconst result = catchErrorSync(fetchDataFromAPI());\nif (result[0]) {\n  console.error('An error occurred:', result[0]);\n} else {\n  console.log('Data received:', result[1]);\n}\n```"
+											}
+										]
+									}
+								]
+							},
+							"sources": [
+								{
+									"fileName": "Catch.ts",
+									"line": 22,
+									"character": 16,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Catch.ts#L22"
+								}
+							],
+							"typeParameters": [
+								{
+									"id": 4,
+									"name": "T",
+									"variant": "typeParam",
+									"kind": 131072,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The type of the value to be processed."
+											}
+										]
+									}
+								}
+							],
+							"parameters": [
+								{
+									"id": 5,
+									"name": "t",
+									"variant": "param",
+									"kind": 32768,
+									"flags": {},
+									"comment": {
+										"summary": [
+											{
+												"kind": "text",
+												"text": "The value to catch errors from."
+											}
+										]
+									},
+									"type": {
+										"type": "reference",
+										"target": 4,
+										"name": "T",
+										"package": "dutilyy",
+										"refersToTypeParameter": true
+									}
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "tuple",
+										"elements": [
+											{
+												"type": "intrinsic",
+												"name": "undefined"
+											},
+											{
+												"type": "reference",
+												"target": 4,
+												"name": "T",
+												"package": "dutilyy",
+												"refersToTypeParameter": true
+											}
+										]
+									},
+									{
+										"type": "tuple",
+										"elements": [
+											{
+												"type": "reference",
+												"target": {
+													"sourceFileName": "node_modules/typescript/lib/lib.es5.d.ts",
+													"qualifiedName": "Error"
+												},
+												"name": "Error",
+												"package": "typescript"
+											},
+											{
+												"type": "literal",
+												"value": null
+											}
+										]
+									}
+								]
+							}
+						}
+					]
+				}
+			],
+			"groups": [
+				{
+					"title": "Functions",
+					"children": [6, 2]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "Catch.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Catch.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 10,
+			"name": "Math",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 11,
+					"name": "default",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {},
+					"comment": {
+						"summary": [],
+						"modifierTags": ["@format"]
+					},
+					"sources": [
+						{
+							"fileName": "Math.ts",
+							"line": 3,
+							"character": 0,
+							"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Math.ts#L3"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/models/Math.ts",
+							"qualifiedName": "NewMath"
+						},
+						"name": "NewMath",
+						"package": "dutilyy"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [11]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "Math.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Math.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 12,
+			"name": "Random",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 13,
+					"name": "default",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "Random.ts",
+							"line": 5,
+							"character": 0,
+							"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Random.ts#L5"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/models/Random.ts",
+							"qualifiedName": "Random"
+						},
+						"name": "Random",
+						"package": "dutilyy"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Variables",
+					"children": [13]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "Random.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Random.ts#L1"
+				}
+			]
+		},
+		{
+			"id": 14,
+			"name": "Style",
+			"variant": "declaration",
+			"kind": 2,
+			"flags": {},
+			"children": [
+				{
+					"id": 41,
+					"name": "BackgroundColor",
+					"variant": "declaration",
+					"kind": 8,
+					"flags": {},
+					"children": [
+						{
+							"id": 50,
+							"name": "Blanche",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 42,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L42"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 47
+							}
+						},
+						{
+							"id": 47,
+							"name": "Blue",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 39,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L39"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 44
+							}
+						},
+						{
+							"id": 49,
+							"name": "Cyan",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 41,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L41"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 46
+							}
+						},
+						{
+							"id": 45,
+							"name": "Green",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 37,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L37"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 42
+							}
+						},
+						{
+							"id": 43,
+							"name": "Grey",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 35,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L35"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 40
+							}
+						},
+						{
+							"id": 55,
+							"name": "LightBlue",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 47,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L47"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 104
+							}
+						},
+						{
+							"id": 53,
+							"name": "LightGreen",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 45,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L45"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 102
+							}
+						},
+						{
+							"id": 51,
+							"name": "LightGrey",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 43,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L43"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 100
+							}
+						},
+						{
+							"id": 52,
+							"name": "LightRed",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 44,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L44"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 101
+							}
+						},
+						{
+							"id": 54,
+							"name": "LightYellow",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 46,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L46"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 103
+							}
+						},
+						{
+							"id": 42,
+							"name": "None",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 34,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L34"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 39
+							}
+						},
+						{
+							"id": 48,
+							"name": "Purple",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 40,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L40"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 45
+							}
+						},
+						{
+							"id": 44,
+							"name": "Red",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 36,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L36"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 41
+							}
+						},
+						{
+							"id": 57,
+							"name": "Turquoise",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 49,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L49"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 106
+							}
+						},
+						{
+							"id": 56,
+							"name": "Violet",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 48,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L48"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 105
+							}
+						},
+						{
+							"id": 58,
+							"name": "White",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 50,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L50"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 107
+							}
+						},
+						{
+							"id": 46,
+							"name": "Yellow",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 38,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L38"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 43
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration Members",
+							"children": [50, 47, 49, 45, 43, 55, 53, 51, 52, 54, 42, 48, 44, 57, 56, 58, 46]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "Style.ts",
+							"line": 33,
+							"character": 12,
+							"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L33"
+						}
+					]
+				},
+				{
+					"id": 23,
+					"name": "TextColor",
+					"variant": "declaration",
+					"kind": 8,
+					"flags": {},
+					"children": [
+						{
+							"id": 32,
+							"name": "Blanche",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 22,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L22"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 37
+							}
+						},
+						{
+							"id": 29,
+							"name": "Blue",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 19,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L19"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 34
+							}
+						},
+						{
+							"id": 31,
+							"name": "Cyan",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 21,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L21"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 36
+							}
+						},
+						{
+							"id": 27,
+							"name": "Green",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 17,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L17"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 32
+							}
+						},
+						{
+							"id": 25,
+							"name": "Grey",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 15,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L15"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 30
+							}
+						},
+						{
+							"id": 37,
+							"name": "LightBlue",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 27,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L27"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 94
+							}
+						},
+						{
+							"id": 35,
+							"name": "LightGreen",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 25,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L25"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 92
+							}
+						},
+						{
+							"id": 33,
+							"name": "LightGrey",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 23,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L23"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 90
+							}
+						},
+						{
+							"id": 34,
+							"name": "LightRed",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 24,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L24"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 91
+							}
+						},
+						{
+							"id": 36,
+							"name": "LightYellow",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 26,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L26"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 93
+							}
+						},
+						{
+							"id": 24,
+							"name": "None",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 14,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L14"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 29
+							}
+						},
+						{
+							"id": 30,
+							"name": "Purple",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 20,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L20"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 35
+							}
+						},
+						{
+							"id": 26,
+							"name": "Red",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 16,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L16"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 31
+							}
+						},
+						{
+							"id": 39,
+							"name": "Turquoise",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 29,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L29"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 96
+							}
+						},
+						{
+							"id": 38,
+							"name": "Violet",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 28,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L28"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 95
+							}
+						},
+						{
+							"id": 40,
+							"name": "White",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 30,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L30"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 97
+							}
+						},
+						{
+							"id": 28,
+							"name": "Yellow",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 18,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L18"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 33
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration Members",
+							"children": [32, 29, 31, 27, 25, 37, 35, 33, 34, 36, 24, 30, 26, 39, 38, 40, 28]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "Style.ts",
+							"line": 13,
+							"character": 12,
+							"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L13"
+						}
+					]
+				},
+				{
+					"id": 15,
+					"name": "TextStyle",
+					"variant": "declaration",
+					"kind": 8,
+					"flags": {},
+					"comment": {
+						"summary": [],
+						"modifierTags": ["@format"]
+					},
+					"children": [
+						{
+							"id": 16,
+							"name": "Bold",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 4,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L4"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 1
+							}
+						},
+						{
+							"id": 18,
+							"name": "Cursive",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 6,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L6"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 3
+							}
+						},
+						{
+							"id": 22,
+							"name": "DoubleUnderline",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 10,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L10"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 21
+							}
+						},
+						{
+							"id": 21,
+							"name": "Strike",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 9,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L9"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 9
+							}
+						},
+						{
+							"id": 20,
+							"name": "Transparent",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 8,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L8"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 8
+							}
+						},
+						{
+							"id": 19,
+							"name": "UnderLine",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 7,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L7"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 4
+							}
+						},
+						{
+							"id": 17,
+							"name": "Vague",
+							"variant": "declaration",
+							"kind": 16,
+							"flags": {},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 5,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L5"
+								}
+							],
+							"type": {
+								"type": "literal",
+								"value": 2
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Enumeration Members",
+							"children": [16, 18, 22, 21, 20, 19, 17]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "Style.ts",
+							"line": 3,
+							"character": 12,
+							"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L3"
+						}
+					]
+				},
+				{
+					"id": 59,
+					"name": "LogOptions",
+					"variant": "declaration",
+					"kind": 256,
+					"flags": {},
+					"children": [
+						{
+							"id": 61,
+							"name": "color",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 111,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L111"
+								}
+							],
+							"type": {
+								"type": "union",
+								"types": [
+									{
+										"type": "reference",
+										"target": 41,
+										"name": "BackgroundColor",
+										"package": "dutilyy"
+									},
+									{
+										"type": "reference",
+										"target": 23,
+										"name": "TextColor",
+										"package": "dutilyy"
+									}
+								]
+							}
+						},
+						{
+							"id": 60,
+							"name": "style",
+							"variant": "declaration",
+							"kind": 1024,
+							"flags": {
+								"isOptional": true
+							},
+							"sources": [
+								{
+									"fileName": "Style.ts",
+									"line": 110,
+									"character": 1,
+									"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L110"
+								}
+							],
+							"type": {
+								"type": "reference",
+								"target": 15,
+								"name": "TextStyle",
+								"package": "dutilyy"
+							}
+						}
+					],
+					"groups": [
+						{
+							"title": "Properties",
+							"children": [61, 60]
+						}
+					],
+					"sources": [
+						{
+							"fileName": "Style.ts",
+							"line": 109,
+							"character": 17,
+							"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L109"
+						}
+					]
+				},
+				{
+					"id": 62,
+					"name": "default",
+					"variant": "declaration",
+					"kind": 32,
+					"flags": {},
+					"sources": [
+						{
+							"fileName": "Style.ts",
+							"line": 53,
+							"character": 0,
+							"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L53"
+						}
+					],
+					"type": {
+						"type": "reference",
+						"target": {
+							"sourceFileName": "src/models/Style.ts",
+							"qualifiedName": "Style"
+						},
+						"name": "Style",
+						"package": "dutilyy"
+					}
+				}
+			],
+			"groups": [
+				{
+					"title": "Enumerations",
+					"children": [41, 23, 15]
+				},
+				{
+					"title": "Interfaces",
+					"children": [59]
+				},
+				{
+					"title": "Variables",
+					"children": [62]
+				}
+			],
+			"sources": [
+				{
+					"fileName": "Style.ts",
+					"line": 1,
+					"character": 0,
+					"url": "https://github.com/TheDummi/utilyy/blob/26635d9969c8fc2dc3dab25f84b15f500be52929/src/models/Style.ts#L1"
+				}
+			]
+		}
+	],
+	"groups": [
+		{
+			"title": "Modules",
+			"children": [1, 10, 12, 14]
+		}
+	],
+	"packageName": "dutilyy",
+	"packageVersion": "1.1.1",
+	"readme": [
+		{
+			"kind": "text",
+			"text": "<!-- @format -->\n\n��#\u0000 \u0000d\u0000u\u0000m\u0000f\u0000u\u0000n\u0000c\u0000t\u0000i\u0000o\u0000n\u0000s\u0000\n\u0000\n\u0000\n\u0000\n\u0000F\u0000u\u0000n\u0000c\u0000t\u0000i\u0000o\u0000n\u0000s\u0000 \u0000t\u0000h\u0000a\u0000t\u0000 \u0000s\u0000h\u0000o\u0000u\u0000l\u0000d\u0000 \u0000b\u0000e\u0000 \u0000i\u0000n\u0000 \u0000t\u0000h\u0000e\u0000 \u0000J\u0000a\u0000v\u0000a\u0000S\u0000c\u0000r\u0000i\u0000p\u0000t\u0000 \u0000l\u0000a\u0000n\u0000g\u0000u\u0000a\u0000g\u0000e\u0000 \u0000b\u0000u\u0000t\u0000 \u0000a\u0000r\u0000e\u0000n\u0000'\u0000t\u0000.\u0000\n\u0000\n\u0000\n\u0000\n\u0000#\u0000#\u0000 \u0000F\u0000u\u0000n\u0000c\u0000t\u0000i\u0000o\u0000n\u0000s\u0000\n\u0000\n\u0000\n\u0000\n\u0000y\u0000e\u0000s\u0000\n\u0000\n\u0000"
+		}
+	],
+	"symbolIdMap": {
+		"1": {
+			"sourceFileName": "src/models/Catch.ts",
+			"qualifiedName": ""
+		},
+		"2": {
+			"sourceFileName": "src/models/Catch.ts",
+			"qualifiedName": "catchErrorSync"
+		},
+		"3": {
+			"sourceFileName": "src/models/Catch.ts",
+			"qualifiedName": "catchErrorSync"
+		},
+		"4": {
+			"sourceFileName": "src/models/Catch.ts",
+			"qualifiedName": "T"
+		},
+		"5": {
+			"sourceFileName": "src/models/Catch.ts",
+			"qualifiedName": "t"
+		},
+		"6": {
+			"sourceFileName": "src/models/Catch.ts",
+			"qualifiedName": "catchError"
+		},
+		"7": {
+			"sourceFileName": "src/models/Catch.ts",
+			"qualifiedName": "catchError"
+		},
+		"8": {
+			"sourceFileName": "src/models/Catch.ts",
+			"qualifiedName": "T"
+		},
+		"9": {
+			"sourceFileName": "src/models/Catch.ts",
+			"qualifiedName": "promise"
+		},
+		"10": {
+			"sourceFileName": "src/models/Math.ts",
+			"qualifiedName": ""
+		},
+		"11": {
+			"sourceFileName": "src/models/Math.ts",
+			"qualifiedName": "default"
+		},
+		"12": {
+			"sourceFileName": "src/models/Random.ts",
+			"qualifiedName": ""
+		},
+		"13": {
+			"sourceFileName": "src/models/Random.ts",
+			"qualifiedName": "default"
+		},
+		"14": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": ""
+		},
+		"15": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextStyle"
+		},
+		"16": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextStyle.Bold"
+		},
+		"17": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextStyle.Vague"
+		},
+		"18": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextStyle.Cursive"
+		},
+		"19": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextStyle.UnderLine"
+		},
+		"20": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextStyle.Transparent"
+		},
+		"21": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextStyle.Strike"
+		},
+		"22": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextStyle.DoubleUnderline"
+		},
+		"23": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor"
+		},
+		"24": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.None"
+		},
+		"25": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Grey"
+		},
+		"26": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Red"
+		},
+		"27": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Green"
+		},
+		"28": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Yellow"
+		},
+		"29": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Blue"
+		},
+		"30": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Purple"
+		},
+		"31": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Cyan"
+		},
+		"32": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Blanche"
+		},
+		"33": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.LightGrey"
+		},
+		"34": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.LightRed"
+		},
+		"35": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.LightGreen"
+		},
+		"36": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.LightYellow"
+		},
+		"37": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.LightBlue"
+		},
+		"38": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Violet"
+		},
+		"39": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.Turquoise"
+		},
+		"40": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "TextColor.White"
+		},
+		"41": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor"
+		},
+		"42": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.None"
+		},
+		"43": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Grey"
+		},
+		"44": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Red"
+		},
+		"45": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Green"
+		},
+		"46": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Yellow"
+		},
+		"47": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Blue"
+		},
+		"48": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Purple"
+		},
+		"49": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Cyan"
+		},
+		"50": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Blanche"
+		},
+		"51": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.LightGrey"
+		},
+		"52": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.LightRed"
+		},
+		"53": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.LightGreen"
+		},
+		"54": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.LightYellow"
+		},
+		"55": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.LightBlue"
+		},
+		"56": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Violet"
+		},
+		"57": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.Turquoise"
+		},
+		"58": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "BackgroundColor.White"
+		},
+		"59": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "LogOptions"
+		},
+		"60": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "LogOptions.style"
+		},
+		"61": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "LogOptions.color"
+		},
+		"62": {
+			"sourceFileName": "src/models/Style.ts",
+			"qualifiedName": "default"
+		}
+	},
+	"files": {
+		"entries": {
+			"1": "src/models/Catch.ts",
+			"2": "src/models/Math.ts",
+			"3": "src/models/Random.ts",
+			"4": "src/models/Style.ts"
+		},
+		"reflections": {
+			"1": 1,
+			"2": 10,
+			"3": 12,
+			"4": 14
+		}
+	}
+}

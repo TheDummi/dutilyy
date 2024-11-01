@@ -1,0 +1,4 @@
+/** @format */
+
+window.navigationData =
+	'data:application/octet-stream;base64,H4sIAAAAAAAACqXSUWuDMBAH8O9yz7JCt5Xh48reVgZt36QPWRJrMF4kvQzL2HcfWjVROxH2enf8+F8uyTeQrAhi2DLiGURQMsoghsIIp+Vl1ZQfMio0RJArFBCvI+CZ0sJKhDjpAV5PvllrrFdSh5yUwc7xM0Ny8/QT3YEOV+RLsHpuAp4CclcLk93q6qLVhEyZ0+SFL2YV++yNtj+0HteDCHuGwhTTELf6f2O0ypIgB7pqOc3RlBfFeGU8P1vjUGyNDq8t0RUdNBoawi9BnKOsaMbp2/PCaKmxcGe5UHg354+y+VqeUEjSpoz3T+OHRq/0vAmomRvdmL9PdPoF7LILRY0DAAA=';

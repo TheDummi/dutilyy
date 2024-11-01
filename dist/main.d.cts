@@ -1,5 +1,4 @@
 /** @format */
-
 declare enum TextStyle {
 	Bold = 1,
 	Vague = 2,
@@ -63,6 +62,7 @@ interface LogOptions {
 	color?: BackgroundColor | TextColor;
 }
 
+/** @format */
 declare const _default$2: {
 	E: number;
 	LN10: number;
@@ -113,6 +113,7 @@ declare const _default$2: {
 	trunc(number: number): number;
 };
 
+/** @format */
 declare const _default$1: {
 	number(min: number, max: number): number;
 	element(array: Array<unknown> | object): any;
