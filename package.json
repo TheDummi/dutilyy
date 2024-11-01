@@ -1,25 +1,49 @@
 {
-    "name": "dumfunctions",
-    "version": "2.1.6",
-    "description": "A package for JS functions that should be in the main language but aren't.",
-    "main": "dist/cjs/main.js",
-    "module": "dist/mjs/main.js",
-    "scripts": {
-        "build": "npm run build:esm && npm run build:cjs && npx prettier --write src dist",
-        "build:esm": "tsc",
-        "build:cjs": "tsc --module CommonJS --outDir dist/cjs"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/TheDummi/DummiFuncs.git"
-    },
-    "keywords": [
-        "JSfunctions"
-    ],
-    "author": "Dummi",
-    "license": "MIT",
-    "bugs": {
-        "url": "https://github.com/TheDummi/DummiFuncs/issues"
-    },
-    "homepage": "https://github.com/TheDummi/DummiFuncs#readme"
+	"name": "utilyy",
+	"version": "1.0.0",
+	"description": "A package for JS functions that should be in the main language but aren't.",
+	"scripts": {},
+	"type": "module",
+	"main": "./dist/main.cjs",
+	"module": "./dist/main.js",
+	"types": "./dist/main.d.ts",
+	"files": [
+		"src",
+		"dist"
+	],
+	"exports": {
+		"require": {
+			"types": "./dist/main.d.cts",
+			"default": "./dist/main.cjs"
+		},
+		"import": {
+			"types": "./dist/main.d.ts",
+			"default": "./dist/main.js"
+		}
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/TheDummi/DummiFuncs.git"
+	},
+	"keywords": [
+		"JSfunctions"
+	],
+	"author": "Dummi",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/TheDummi/DummiFuncs/issues"
+	},
+	"homepage": "https://github.com/TheDummi/DummiFuncs#readme",
+	"packageManager": "npm@10.9.0",
+	"engines": {
+		"node": "20.05.00"
+	},
+	"devDependencies": {
+		"@arethetypeswrong/cli": "^0.16.4",
+		"prettier": "^3.3.3",
+		"publishyy": "^0.0.1",
+		"tsup": "^8.3.5",
+		"typedoc": "^0.26.10",
+		"typescript": "^5.6.3"
+	}
 }

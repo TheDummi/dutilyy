@@ -1,3 +1,19 @@
+# . Environment
+docs
+*.md
+
+# * Node
 node_modules
-src
 package-lock.json
+
+# ! Config
+.gitignore
+.gitattributes
+.github
+.prettierrc
+jest.config.ts
+test
+
+# ? TypeScript
+tsconfig.json
+src

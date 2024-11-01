@@ -1,0 +1,79 @@
+{
+	"plugin": ["typedoc-github-theme"],
+	"theme": "typedoc-github-theme",
+
+	"name": "Publishyy",
+	"entryPoints": ["src/*"],
+	"entryPointStrategy": "expand",
+	"exclude": ["node_modules", "src/main.ts"],
+	"readme": "README.md",
+	"excludeReferences": true,
+	"includeVersion": true,
+
+	"out": "./docs",
+	"json": "./docs/docs.json",
+	"pretty": true,
+	"markdownItOptions": {
+		"html": true,
+		"linkify": true
+	},
+	"hideGenerator": true,
+	"searchInComments": true,
+	"searchInDocuments": true,
+	"navigation": {
+		"includeCategories": false,
+		"includeGroups": false,
+		"includeFolders": true
+	},
+	"categorizeByGroup": false,
+	"visibilityFilters": {
+		"protected": true,
+		"private": false,
+		"inherited": true,
+		"external": false,
+		"@alpha": false,
+		"@beta": false
+	},
+
+	"commentStyle": "all",
+	"jsDocCompatibility": {
+		"inheritDocTag": true,
+		"ignoreUnescapedBraces": true
+	},
+	"modifierTags": [
+		"@alpha",
+		"@beta",
+		"@eventProperty",
+		"@experimental",
+		"@internal",
+		"@override",
+		"@packageDocumentation",
+		"@public",
+		"@readonly",
+		"@sealed",
+		"@virtual",
+		"@abstract",
+		"@class",
+		"@enum",
+		"@event",
+		"@hidden",
+		"@hideCategories",
+		"@hideconstructor",
+		"@hideGroups",
+		"@ignore",
+		"@interface",
+		"@namespace",
+		"@overload",
+		"@private",
+		"@protected",
+		"@showCategories",
+		"@showGroups",
+		"@format"
+	],
+
+	"validation": {
+		"notExported": true,
+		"invalidLink": true,
+		"notDocumented": false
+	}
+}
